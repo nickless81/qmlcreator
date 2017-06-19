@@ -1,5 +1,5 @@
-import QtQuick 2.5
-import QtQuick.Controls 1.4
+import QtQuick 2.7
+import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
 
 Item {
@@ -35,20 +35,6 @@ Item {
                 rows: 3
                 flow: GridLayout.TopToBottom
                 anchors.fill: parent
-
-                ExclusiveGroup { id: group }
-                RadioButton {
-                    text: "RadioButton1"
-                    exclusiveGroup: group
-                }
-                RadioButton {
-                    text: "RadioButton2"
-                    exclusiveGroup: group
-                }
-                RadioButton {
-                    text: "RadioButton3"
-                    exclusiveGroup: group
-                }
 
                 CheckBox {
                     text: "CheckBox1"

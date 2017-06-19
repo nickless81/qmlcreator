@@ -4,8 +4,7 @@ QT += \
     network websockets \
     xml svg \
     sensors bluetooth nfc \
-    positioning location \
-    3dcore 3drenderer 3dinput 3dquick
+    positioning location
 
 TARGET = qmlcreator
 TEMPLATE = app
