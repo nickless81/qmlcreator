@@ -1,5 +1,5 @@
-import QtQuick 2.5
-import QtQuick.Controls 1.3
+import QtQuick 2.7
+import QtQuick.Controls 2.2
 import QtLocation 5.3
 import QtQuick.Window 2.2
 

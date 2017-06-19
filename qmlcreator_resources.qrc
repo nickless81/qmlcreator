@@ -96,8 +96,6 @@
         <file>qml/examples/Joystick/Joystick.qml</file>
         <file>qml/examples/Joystick/main.qml</file>
         <file>qml/examples/Joystick/Player.qml</file>
-        <file>qml/examples/Live Webcam/main.qml</file>
-        <file>qml/examples/Live Webcam/WebcamsModel.qml</file>
         <file>qml/examples/Local Storage/Database.js</file>
         <file>qml/examples/Local Storage/main.qml</file>
         <file>qml/examples/Looped List View/DateSelector.qml</file>
