@@ -132,6 +132,7 @@
         <file>resources/dictionaries/properties.txt</file>
         <file>resources/dictionaries/qml.txt</file>
         <file>qml/modules/3D.qml</file>
+        <file>qml/modules/3DCore.qml</file>
         <file>qml/modules/3DInput.qml</file>
         <file>qml/modules/3DRenderer.qml</file>
         <file>qml/modules/AudioEngine.qml</file>
