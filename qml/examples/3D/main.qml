@@ -1,7 +1,10 @@
-import QtQuick 2.7
-import QtQuick.Controls 2.2
-import QtQuick.Layouts 1.2
-import QtQuick.Scene3D 2.0
+import QtQuick 2.12
+import QtQuick.Controls 2.5
+import QtQuick.Layouts 1.12
+import QtQuick.Scene3D 2.12
+import Qt3D.Core 2.12
+import Qt3D.Render 2.12
+import Qt3D.Extras 2.12
 
 Rectangle {
     id: rootItem
@@ -29,16 +32,12 @@ Rectangle {
                 viewCenter: Qt.vector3d(0.0, 0.0, 0.0)
             }
 
-            components: [
-                FrameGraph {
-                    activeFrameGraph:
-                        ForwardRenderer {
-                            camera: camera
-                            clearColor: rootItem.color
-                        }
+            components: RenderSettings {
+                activeFrameGraph: ForwardRenderer {
+                        camera: camera
+                        clearColor: rootItem.color
                 }
-            ]
-
+            }
             Entity {
                 components: [
                     Mesh {
@@ -52,18 +51,10 @@ Rectangle {
                     },
 
                     Transform {
-                        Rotate {
-                            angle: xSlider.value
-                            axis: Qt.vector3d(1, 0, 0)
-                        }
-                        Rotate {
-                            angle: ySlider.value
-                            axis: Qt.vector3d(0, 1, 0)
-                        }
-                        Rotate {
-                            angle: zSlider.value
-                            axis: Qt.vector3d(0, 0, 1)
-                        }
+
+                        rotationX : xSlider.value
+                        rotationY : ySlider.value
+                        rotationZ : zSlider.value
                     }
                 ]
             }
@@ -81,8 +72,8 @@ Rectangle {
         Slider {
             id: xSlider
             Layout.fillWidth: true
-            minimumValue: 0
-            maximumValue: 360
+            from: 0
+            to: 360
             value: 0
         }
 
@@ -90,8 +81,8 @@ Rectangle {
         Slider {
             id: ySlider
             Layout.fillWidth: true
-            minimumValue: 0
-            maximumValue: 360
+            from: 0
+            to: 360
             value: 0
             enabled: !animateCheckBox.checked
 
@@ -108,8 +99,8 @@ Rectangle {
         Slider {
             id: zSlider
             Layout.fillWidth: true
-            minimumValue: 0
-            maximumValue: 360
+            from: 0
+            to: 360
             value: 0
         }
 
