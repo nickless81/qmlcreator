@@ -17,7 +17,7 @@
 ****************************************************************************/
 
 import QtQml 2.12
-import QtWebSockets 1.1
+import Qt.WebSockets 1.1
 
 QtObject {
     property string version: "1.1"
