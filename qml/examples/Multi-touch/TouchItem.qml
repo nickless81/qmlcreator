@@ -1,5 +1,5 @@
-import QtQuick 2.5
-import QtQuick.Window 2.2
+import QtQuick 2.12
+import QtQuick.Window 2.12
 
 Item {
     id: touchItem

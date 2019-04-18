@@ -1,5 +1,5 @@
 .pragma library
-.import QtQuick.LocalStorage 2.0 as Sql
+.import QtQuick.LocalStorage 2.12 as Sql
 
 var db = Sql.LocalStorage.openDatabaseSync("Local Storage Example", "1.0", "Sample database", 100000);
 

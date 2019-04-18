@@ -1,9 +1,9 @@
-import QtQuick 2.7
-import QtQuick.Controls 2.2
-import QtQuick.Layouts 1.2
-import QtQuick.Window 2.2
-import QtSensors 5.1
-import QtMultimedia 5.4
+import QtQuick 2.12
+import QtQuick.Controls 2.5
+import QtQuick.Layouts 1.12
+import QtQuick.Window 2.12
+import QtSensors 5.12
+import QtMultimedia 5.12
 
 Item {
     anchors.fill: parent

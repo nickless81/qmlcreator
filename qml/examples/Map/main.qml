@@ -1,7 +1,7 @@
-import QtQuick 2.7
-import QtQuick.Controls 2.2
-import QtLocation 5.3
-import QtQuick.Window 2.2
+import QtQuick 2.12
+import QtQuick.Controls 2.5
+import QtLocation 5.12
+import QtQuick.Window 2.12
 
 Item {
     anchors.fill: parent
