@@ -72,23 +72,25 @@
         <file>qml/screens/PlaygroundScreen.qml</file>
         <file>qml/screens/ProjectsScreen.qml</file>
         <file>qml/screens/SettingsScreen.qml</file>
-        <file>qml/examples/3D/main.qml</file>
-        <file>qml/examples/Accelerometer/main.qml</file>
-        <file>qml/examples/Ambient Light Sensor/main.qml</file>
-        <file>qml/examples/Analog Clock/Clock.qml</file>
-        <file>qml/examples/Analog Clock/ClockBackground.qml</file>
-        <file>qml/examples/Analog Clock/ClockDigits.qml</file>
-        <file>qml/examples/Analog Clock/ClockHand.qml</file>
-        <file>qml/examples/Analog Clock/main.qml</file>
-        <file>qml/examples/Canvas/main.qml</file>
-        <file>qml/examples/Controls/main.qml</file>
-        <file>qml/examples/Debugging/main.qml</file>
-        <file>qml/examples/Debugging/Rect.qml</file>
-        <file>qml/examples/Device Info/main.qml</file>
-        <file>qml/examples/Dialogs/ColorDialogTab.qml</file>
-        <file>qml/examples/Dialogs/main.qml</file>
-        <file>qml/examples/Dialogs/MessageDialogTab.qml</file>
-        <file>qml/examples/Gradient Text/main.qml</file>
+        <file>qml/examples/3D/main</file>
+        <file>qml/examples/3D/main2</file>
+        <file>qml/examples/Accelerometer/main</file>
+        <file>qml/examples/Ambient Light Sensor/main</file>
+        <file>qml/examples/Analog Clock/Clock</file>
+        <file>qml/examples/Analog Clock/ClockBackground</file>
+        <file>qml/examples/Analog Clock/ClockDigits</file>
+        <file>qml/examples/Analog Clock/ClockHand</file>
+        <file>qml/examples/Analog Clock/main</file>
+        <file>qml/examples/Camera/main</file>
+        <file>qml/examples/Canvas/main</file>
+        <file>qml/examples/Controls/main</file>
+        <file>qml/examples/Debugging/main</file>
+        <file>qml/examples/Debugging/Rect</file>
+        <file>qml/examples/Device Info/main</file>
+        <file>qml/examples/Dialogs/ColorDialogTab</file>
+        <file>qml/examples/Dialogs/main</file>
+        <file>qml/examples/Dialogs/MessageDialogTab</file>
+        <file>qml/examples/Gradient Text/main</file>
         <file>qml/examples/Graphical Effects/BrightnessContrastTab.qml</file>
         <file>qml/examples/Graphical Effects/DesaturateTab.qml</file>
         <file>qml/examples/Graphical Effects/DirectionalBlurTab.qml</file>
@@ -106,7 +108,6 @@
         <file>qml/examples/Map/main.qml</file>
         <file>qml/examples/Multi-touch/main.qml</file>
         <file>qml/examples/Multi-touch/TouchItem.qml</file>
-        <file>qml/examples/Camera/main.qml</file>
         <file>qml/examples/Particles/main.qml</file>
         <file>qml/examples/Proximity Sensor/main.qml</file>
         <file>qml/examples/Repeater/ColorRect.qml</file>
@@ -133,6 +134,7 @@
         <file>resources/dictionaries/qml.txt</file>
         <file>qml/modules/3D.qml</file>
         <file>qml/modules/3DCore.qml</file>
+        <file>qml/modules/3DExtras.qml</file>
         <file>qml/modules/3DInput.qml</file>
         <file>qml/modules/3DRender.qml</file>
         <file>qml/modules/3DRenderer.qml</file>

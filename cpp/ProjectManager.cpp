@@ -17,7 +17,7 @@
 ****************************************************************************/
 
 #include "ProjectManager.h"
-
+#include <QDebug>
 ProjectManager::ProjectManager(QObject *parent) :
     QObject(parent)
 {
@@ -102,14 +102,44 @@ void ProjectManager::restoreExamples()
         deviceExamplesDir.mkdir(folderName);
 
         QDir qrcExampleDir(":/qml/examples/" + folderName);
+        qDebug() << "qrcExampleDir:" << qrcExampleDir;
 
         QFileInfoList files = qrcExampleDir.entryInfoList(QDir::Files);
 
+
         foreach(QFileInfo file, files) {
             QString fileName = file.fileName();
-            QFile::copy(file.absoluteFilePath(), baseFolderPath(Examples) + QDir::separator() + folderName + QDir::separator() + fileName);
+            qDebug() << "File name:" << fileName;
+            qDebug() << "File Absotule Path:" << file.absoluteFilePath();
+            qDebug() << "File Destiny Path:" << baseFolderPath(Examples) + QDir::separator() + folderName + QDir::separator() + fileName;
+            if(file.exists()){
+                qDebug() << "Exists file:" << fileName;
+            }
+            if(file.isReadable()){
+                qDebug() << fileName << ".isReadable:" << "true";
+            }
+            if(file.isWritable()){
+                qDebug() << fileName << ".isWritable:" << "true";
+            }
+            QFile fileTmp(file.absoluteFilePath());
+            if(fileTmp.open(QIODevice::ReadOnly)){
+                qDebug() << "Reading file:" << fileTmp;
+                while (!fileTmp.atEnd()) {
+                    QByteArray line = fileTmp.readLine();
+                    qDebug() << line;
+                }
+                fileTmp.close();
+            }
+            if(QFile::copy(file.absoluteFilePath(), baseFolderPath(Examples) + QDir::separator() + folderName + QDir::separator() + fileName + ".qml"))
+            //if(QFile::copy(file.absoluteFilePath(), baseFolderPath(Examples) + QDir::separator() + folderName + QDir::separator() + fileName))
+            {
+                qDebug() << "Successfully copy of file:" << fileName;
+            }else{
+                qDebug() << "Failed to copy of file:" << fileName;
 
-            QFile::setPermissions(baseFolderPath(Examples) + QDir::separator() + folderName + QDir::separator() + fileName,
+            }
+            QFile::setPermissions(baseFolderPath(Examples) + QDir::separator() + folderName + QDir::separator() + fileName + ".qml",
+            //QFile::setPermissions(baseFolderPath(Examples) + QDir::separator() + folderName + QDir::separator() + fileName,
                                   QFileDevice::ReadOwner | QFileDevice::WriteOwner |
                                   QFileDevice::ReadUser  | QFileDevice::WriteUser  |
                                   QFileDevice::ReadGroup | QFileDevice::WriteGroup |
@@ -221,7 +251,7 @@ void ProjectManager::saveFileContent(QString content)
     textStream<<content;
 }
 
-QQmlApplicationEngine *ProjectManager::m_qmlEngine = NULL;
+QQmlApplicationEngine *ProjectManager::m_qmlEngine = nullptr;
 
 void ProjectManager::setQmlEngine(QQmlApplicationEngine *engine)
 {
@@ -258,7 +288,7 @@ QString ProjectManager::baseFolderPath(BaseFolder folder)
 
     QString folderPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) +
                          QDir::separator() +
-                         "QML Projects";
+                         "QML_Projects";
 
     if (!folderName.isEmpty())
     {
