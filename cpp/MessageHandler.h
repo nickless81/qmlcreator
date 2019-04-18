@@ -11,7 +11,7 @@ class MessageHandler : public QObject
     Q_OBJECT
 
 public:
-    explicit MessageHandler(QObject *parent = 0);
+    explicit MessageHandler(QObject *parent = nullptr);
 
     // QML engine stuff
     static void setQmlEngine(QQmlApplicationEngine *engine);

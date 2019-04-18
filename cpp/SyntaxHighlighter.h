@@ -39,7 +39,7 @@ class SyntaxHighlighter : public QObject
     Q_PROPERTY(QColor propertyColor  MEMBER m_propertyColor  READ propertyColor  WRITE setPropertyColor  NOTIFY propertyColorChanged)
 
 public:
-    explicit SyntaxHighlighter(QObject *parent = 0);
+    explicit SyntaxHighlighter(QObject *parent = nullptr);
     Q_INVOKABLE void setHighlighter(QObject *textArea);
     Q_INVOKABLE void rehighlight();
     Q_INVOKABLE void addQmlComponent(QString componentName);

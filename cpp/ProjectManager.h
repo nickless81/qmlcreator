@@ -39,7 +39,7 @@ class ProjectManager : public QObject
     Q_PROPERTY(QString fileFormat MEMBER m_fileFormat READ fileFormat NOTIFY fileFormatChanged)
 
 public:
-    explicit ProjectManager(QObject *parent = 0);
+    explicit ProjectManager(QObject *parent = nullptr);
 
     enum BaseFolder { Projects, Examples };
 

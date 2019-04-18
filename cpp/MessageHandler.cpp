@@ -5,8 +5,8 @@ MessageHandler::MessageHandler(QObject *parent) :
 {
 }
 
-QQmlApplicationEngine *MessageHandler::m_qmlEngine = NULL;
-QObject *MessageHandler::m_qmlMessageHandler = NULL;
+QQmlApplicationEngine *MessageHandler::m_qmlEngine = nullptr;
+QObject *MessageHandler::m_qmlMessageHandler = nullptr;
 
 void MessageHandler::setQmlEngine(QQmlApplicationEngine *engine)
 {
@@ -47,12 +47,12 @@ void MessageHandler::handler(QtMsgType messageType, const QMessageLogContext &co
 
     if (m_qmlEngine)
     {
-        if (m_qmlMessageHandler == NULL)
+        if (m_qmlMessageHandler == nullptr)
         {
             m_qmlMessageHandler = m_qmlEngine->rootObjects().first()->findChild<QObject*>("messageHandler");
         }
 
-        if (m_qmlMessageHandler != NULL)
+        if (m_qmlMessageHandler != nullptr)
         {
             QString guiMessageString = QString("%1: %2").arg(messageTypeString).arg(message);
             QMetaObject::invokeMethod(m_qmlMessageHandler, "messageReceived", Q_ARG(QString, guiMessageString));

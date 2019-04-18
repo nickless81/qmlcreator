@@ -40,7 +40,7 @@ public:
         Property
     };
 
-    QMLHighlighter(QTextDocument *parent = 0);
+    QMLHighlighter(QTextDocument *parent = nullptr);
     void setColor(ColorComponent component, const QColor &color);
     void mark(const QString &str, Qt::CaseSensitivity caseSensitivity);
     void addQmlComponent(QString componentName);

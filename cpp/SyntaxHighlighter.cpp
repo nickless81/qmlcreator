@@ -20,7 +20,7 @@
 
 SyntaxHighlighter::SyntaxHighlighter(QObject *parent) :
     QObject(parent),
-    m_highlighter(NULL)
+    m_highlighter(nullptr)
 {
     Q_UNUSED(parent)
 }
