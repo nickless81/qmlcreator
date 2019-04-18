@@ -17,6 +17,7 @@
 ****************************************************************************/
 
 import QtQuick 2.12
+import QtQuick.Controls 2.5
 import ProjectManager 1.1
 import "../components"
 
@@ -84,6 +85,11 @@ BlankScreen {
                 text: qsTr("ABOUT")
                 icon: "\uf0e5"
                 onClicked: stackView.push(Qt.resolvedUrl("AboutScreen.qml"))
+            }
+            CNavigationButton {
+                text: qsTr("QUIT")
+                icon: "\uf00d"
+                onClicked: Qt.quit()
             }
         }
     }
