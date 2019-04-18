@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
+import QtQml 2.12
 import QtQuick.Controls.Styles 1.4
 
 QtObject {

@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
+import QtQml 2.12
 import QtGraphicalEffects 1.0
 
 QtObject {

@@ -16,9 +16,9 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
-import QtQuick.XmlListModel 2.0
+import QtQml 2.12
+import QtQuick.XmlListModel 2.12
 
 QtObject {
-    property string version: "2.0"
+    property string version: "2.12"
 }

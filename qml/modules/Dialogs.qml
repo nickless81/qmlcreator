@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
+import QtQml 2.12
 import QtQuick.Dialogs 1.2
 
 QtObject {

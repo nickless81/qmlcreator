@@ -16,9 +16,9 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
-import QtNfc 5.2
+import QtQml 2.12
+import QtNfc 5.12
 
 QtObject {
-    property string version: "5.2"
+    property string version: "5.12"
 }

@@ -16,9 +16,9 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
-import QtMultimedia 5.5
+import QtQml 2.12
+import QtMultimedia 5.12
 
 QtObject {
-    property string version: "5.5"
+    property string version: "5.12"
 }
