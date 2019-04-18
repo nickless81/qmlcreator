@@ -16,9 +16,9 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
-import Qt3D.Input 2.0
+import QtQml 2.12
+import Qt3D.Input 2.12
 
 QtObject {
-    property string version: "2.0"
+    property string version: "2.12"
 }
