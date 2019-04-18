@@ -1,5 +1,5 @@
 import QtQuick 2.12
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.12
 import QtGraphicalEffects 1.0
 
@@ -35,8 +35,8 @@ Item {
         Slider {
             id: angleSlider
             Layout.fillWidth: true
-            minimumValue: 0
-            maximumValue: 360
+            from: 0
+            to: 360
             value: 180
         }
 
@@ -44,8 +44,8 @@ Item {
         Slider {
             id: lengthSlider
             Layout.fillWidth: true
-            minimumValue: 0
-            maximumValue: 100
+            from: 0
+            to: 100
             value: 100
         }
 
@@ -53,8 +53,8 @@ Item {
         Slider {
             id: samplesSlider
             Layout.fillWidth: true
-            minimumValue: 0
-            maximumValue: 30
+            from: 0
+            to: 30
             value: 30
         }
     }

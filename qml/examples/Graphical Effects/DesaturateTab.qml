@@ -1,5 +1,5 @@
 import QtQuick 2.12
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.12
 import QtGraphicalEffects 1.0
 
@@ -32,8 +32,8 @@ Item {
         Slider {
             id: desaturationSlider
             Layout.fillWidth: true
-            minimumValue: 0
-            maximumValue: 1
+            from: 0
+            to: 1
             value: 1
         }
     }
