@@ -7,7 +7,7 @@ QT += \
     positioning location \
     3dcore 3drender 3dinput \
     3dquick 3dquickrender 3dquickinput \
-    3dquickextras
+    3dquickextras quickcontrols2
 
 TARGET = qmlcreator
 TEMPLATE = app
