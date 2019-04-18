@@ -1,5 +1,5 @@
-import QtQuick 2.7
-import QtSensors 5.1
+import QtQuick 2.12
+import QtSensors 5.12
 
 Item {
     anchors.fill: parent
