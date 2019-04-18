@@ -17,7 +17,7 @@
 ****************************************************************************/
 
 import QtQuick 2.12
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.5
 import "../components"
 
 BlankScreen {
@@ -53,6 +53,7 @@ BlankScreen {
 
         ListElement { module: "Qt3D";                    version: ""; status: 0; testComponent: "3D.qml" }
         ListElement { module: "Qt3D.Core";               version: ""; status: 0; testComponent: "3DCore.qml" }
+        ListElement { module: "Qt3D.Extras";              version: ""; status: 0; testComponent: "3DExtras.qml" }
         ListElement { module: "Qt3D.Input";              version: ""; status: 0; testComponent: "3DInput.qml" }
         ListElement { module: "Qt3D.Render";             version: ""; status: 0; testComponent: "3DRender.qml" }
         ListElement { module: "Qt3D.Renderer";           version: ""; status: 0; testComponent: "3DRenderer.qml" }
