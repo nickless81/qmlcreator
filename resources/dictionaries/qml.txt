@@ -198,6 +198,7 @@ MenuBarStyle
 MenuItem
 MenuSeparator
 MenuStyle
+Mesh
 MessageDialog
 MouseArea
 MouseEvent
@@ -242,6 +243,7 @@ PathQuad
 PathSvg
 PathView
 PauseAnimation
+PhongMaterial
 Picture
 PieMenu
 PinchArea

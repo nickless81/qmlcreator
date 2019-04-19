@@ -21,7 +21,7 @@ Rectangle {
             id: sceneRoot
 
             Camera {
-                id: camera
+                id: webCam
                 projectionType: CameraLens.PerspectiveProjection
                 fieldOfView: 40
                 aspectRatio: 1
@@ -34,7 +34,7 @@ Rectangle {
 
             components: RenderSettings {
                 activeFrameGraph: ForwardRenderer {
-                        camera: camera
+                        camera: webCam
                         clearColor: rootItem.color
                 }
             }
@@ -51,7 +51,6 @@ Rectangle {
                     },
 
                     Transform {
-
                         rotationX : xSlider.value
                         rotationY : ySlider.value
                         rotationZ : zSlider.value
