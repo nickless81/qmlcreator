@@ -2,13 +2,12 @@ QT += \
     core gui qml quick \
     multimedia sql \
     network websockets \
-    xml svg \
+    xml svg purchasing \
     sensors bluetooth nfc \
     positioning location \
     3dcore 3drender 3dinput \
     3dquick 3dquickrender 3dquickinput \
     3dquickextras quickcontrols2
-
 TARGET = qmlcreator
 TEMPLATE = app
 
@@ -66,4 +65,9 @@ ios {
 
     QMAKE_INFO_PLIST = $$PWD/platform-specific/ios/Project-Info.plist
     OTHER_FILES += $$QMAKE_INFO_PLIST
+}
+
+unix:!android:{
+QT += \
+    waylandcompositor webengine
 }
