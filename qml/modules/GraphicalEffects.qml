@@ -17,7 +17,7 @@
 ****************************************************************************/
 
 import QtQml 2.12
-import QtQml.StateMachine 1.0
+import QtGraphicalEffects 1.0
 
 QtObject {
     property string version: "1.0"

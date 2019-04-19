@@ -17,7 +17,7 @@
 ****************************************************************************/
 
 import QtQml 2.12
-import QtQml.StateMachine 1.0
+import QtWayland.Compositor 1.1
 
 QtObject {
     property string version: "1.0"

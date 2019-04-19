@@ -131,21 +131,28 @@
         <file>resources/dictionaries/keywords.txt</file>
         <file>resources/dictionaries/properties.txt</file>
         <file>resources/dictionaries/qml.txt</file>
-        <file>qml/modules/3D.qml</file>
+        <file>qml/modules/3DAnimation.qml</file>
         <file>qml/modules/3DCore.qml</file>
         <file>qml/modules/3DExtras.qml</file>
         <file>qml/modules/3DInput.qml</file>
+        <file>qml/modules/3DLogic.qml</file>
         <file>qml/modules/3DRender.qml</file>
-        <file>qml/modules/3DRenderer.qml</file>
         <file>qml/modules/AudioEngine.qml</file>
         <file>qml/modules/Bluetooth.qml</file>
         <file>qml/modules/Canvas3D.qml</file>
+        <file>qml/modules/Charts.qml</file>
         <file>qml/modules/Controls.qml</file>
         <file>qml/modules/Controls2.qml</file>
+        <file>qml/modules/DataVisualization.qml</file>
         <file>qml/modules/Dialogs.qml</file>
         <file>qml/modules/Extras.qml</file>
         <file>qml/modules/FolderListModel.qml</file>
+        <file>qml/modules/Gamepad.qml</file>
         <file>qml/modules/GraphicalEffects.qml</file>
+        <file>qml/modules/LabLocation.qml</file>
+        <file>qml/modules/LabQmlModels.qml</file>
+        <file>qml/modules/LabSettings.qml</file>
+        <file>qml/modules/LabWavefrontmesh.qml</file>
         <file>qml/modules/Layouts.qml</file>
         <file>qml/modules/LocalStorage.qml</file>
         <file>qml/modules/Location.qml</file>
@@ -154,13 +161,24 @@
         <file>qml/modules/Nfc.qml</file>
         <file>qml/modules/Particles.qml</file>
         <file>qml/modules/Positioning.qml</file>
+        <file>qml/modules/Purchasing.qml</file>
+        <file>qml/modules/RemoteObjects.qml</file>
         <file>qml/modules/Qml.qml</file>
         <file>qml/modules/Quick.qml</file>
+        <file>qml/modules/Scene2D.qml</file>
         <file>qml/modules/Scene3D.qml</file>
+        <file>qml/modules/Scxml.qml</file>
         <file>qml/modules/Sensors.qml</file>
-        <file>qml/modules/Settings.qml</file>
+        <file>qml/modules/Shapes.qml</file>
+        <file>qml/modules/StateMachine.qml</file>
         <file>qml/modules/Styles.qml</file>
         <file>qml/modules/Test.qml</file>
+        <file>qml/modules/VirtuaKeyboard.qml</file>
+        <file>qml/modules/VirtuaKeyboardSettings.qml</file>
+        <file>qml/modules/VirtuaKeyboardStyles.qml</file>
+        <file>qml/modules/WaylandCompositor.qml</file>
+        <file>qml/modules/WebChannel.qml</file>
+        <file>qml/modules/WebEngine.qml</file>
         <file>qml/modules/WebSockets.qml</file>
         <file>qml/modules/WebView.qml</file>
         <file>qml/modules/Window.qml</file>

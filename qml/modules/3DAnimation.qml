@@ -17,8 +17,8 @@
 ****************************************************************************/
 
 import QtQml 2.12
-import QtQml.StateMachine 1.0
+import Qt3D.Animation 2.12
 
 QtObject {
-    property string version: "1.0"
+    property string version: "2.12"
 }

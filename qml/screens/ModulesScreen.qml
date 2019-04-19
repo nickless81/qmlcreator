@@ -28,18 +28,26 @@ BlankScreen {
         id: modules
 
         ListElement { module: "QtQml";                   version: ""; status: 0; testComponent: "Qml.qml" }
+        ListElement { module: "QtQml.Models";            version: ""; status: 0; testComponent: "Models.qml" }
+        ListElement { module: "QtQml.Scxml";             version: ""; status: 0; testComponent: "Scxml.qml" }
+        ListElement { module: "QtQml.StateMachine";      version: ""; status: 0; testComponent: "StateMachine.qml" }
+
         ListElement { module: "QtQuick";                 version: ""; status: 0; testComponent: "Quick.qml" }
         ListElement { module: "QtQuick.Controls";        version: ""; status: 0; testComponent: "Controls.qml" }
         ListElement { module: "QtQuick.Controls2";       version: ""; status: 0; testComponent: "Controls2.qml" }
         ListElement { module: "QtQuick.Controls.Styles"; version: ""; status: 0; testComponent: "Styles.qml" }
-        ListElement { module: "QtQuick.Layouts";         version: ""; status: 0; testComponent: "Layouts.qml" }
-        ListElement { module: "QtQml.Models";            version: ""; status: 0; testComponent: "Models.qml" }
-        ListElement { module: "QtQuick.XmlListModel";    version: ""; status: 0; testComponent: "XmlListModel.qml" }
-        ListElement { module: "QtQuick.LocalStorage";    version: ""; status: 0; testComponent: "LocalStorage.qml" }
-        ListElement { module: "QtQuick.Particles";       version: ""; status: 0; testComponent: "Particles.qml" }
-        ListElement { module: "QtQuick.Window";          version: ""; status: 0; testComponent: "Window.qml" }
         ListElement { module: "QtQuick.Dialogs";         version: ""; status: 0; testComponent: "Dialogs.qml" }
         ListElement { module: "QtQuick.Extras";          version: ""; status: 0; testComponent: "Extras.qml" }
+        ListElement { module: "QtQuick.Layouts";         version: ""; status: 0; testComponent: "Layouts.qml" }
+        ListElement { module: "QtQuick.LocalStorage";    version: ""; status: 0; testComponent: "LocalStorage.qml" }
+        ListElement { module: "QtQuick.Particles";       version: ""; status: 0; testComponent: "Particles.qml" }
+        ListElement { module: "QtQuick.Shapes";          version: ""; status: 0; testComponent: "Shapes.qml" }
+        ListElement { module: "QtQuick.VirtualKeyboard";            version: ""; status: 0; testComponent: "VirtuaKeyboard.qml" }
+        ListElement { module: "QtQuick.VirtualKeyboard.Settings";   version: ""; status: 0; testComponent: "VirtuaKeyboardSettings.qml" }
+        ListElement { module: "QtQuick.VirtualKeyboard.Styles";     version: ""; status: 0; testComponent: "VirtuaKeyboardStyles.qml" }
+        ListElement { module: "QtQuick.Window";          version: ""; status: 0; testComponent: "Window.qml" }
+        ListElement { module: "QtQuick.XmlListModel";    version: ""; status: 0; testComponent: "XmlListModel.qml" }
+
         ListElement { module: "QtTest";                  version: ""; status: 0; testComponent: "Test.qml" }
         ListElement { module: "QtGraphicalEffects";      version: ""; status: 0; testComponent: "GraphicalEffects.qml" }
         ListElement { module: "QtSensors";               version: ""; status: 0; testComponent: "Sensors.qml" }
@@ -48,21 +56,37 @@ BlankScreen {
         ListElement { module: "QtPositioning";           version: ""; status: 0; testComponent: "Positioning.qml" }
         ListElement { module: "QtBluetooth";             version: ""; status: 0; testComponent: "Bluetooth.qml" }
         ListElement { module: "QtNfc";                   version: ""; status: 0; testComponent: "Nfc.qml" }
+        ListElement { module: "QtWebChannel";            version: ""; status: 0; testComponent: "WebChannel.qml" }
         ListElement { module: "QtWebSockets";            version: ""; status: 0; testComponent: "WebSockets.qml" }
+        ListElement { module: "QtWebEngine";             version: ""; status: 0; testComponent: "WebEngine.qml" }
         ListElement { module: "QtWebView";               version: ""; status: 0; testComponent: "WebView.qml" }
 
-        ListElement { module: "Qt3D";                    version: ""; status: 0; testComponent: "3D.qml" }
+
+        ListElement { module: "Qt3D.Animation";          version: ""; status: 0; testComponent: "3DAnimation.qml" }
         ListElement { module: "Qt3D.Core";               version: ""; status: 0; testComponent: "3DCore.qml" }
-        ListElement { module: "Qt3D.Extras";              version: ""; status: 0; testComponent: "3DExtras.qml" }
+        ListElement { module: "Qt3D.Extras";             version: ""; status: 0; testComponent: "3DExtras.qml" }
         ListElement { module: "Qt3D.Input";              version: ""; status: 0; testComponent: "3DInput.qml" }
+        ListElement { module: "Qt3D.Logic";              version: ""; status: 0; testComponent: "3DLogic.qml" }
         ListElement { module: "Qt3D.Render";             version: ""; status: 0; testComponent: "3DRender.qml" }
-        ListElement { module: "Qt3D.Renderer";           version: ""; status: 0; testComponent: "3DRenderer.qml" }
+        ListElement { module: "QtWayland.Compositor";   version: ""; status: 0; testComponent: "WaylandCompositor.qml" }
+
+        ListElement { module: "QtQuick.Scene2D";         version: ""; status: 0; testComponent: "Scene2D.qml" }
         ListElement { module: "QtQuick.Scene3D";         version: ""; status: 0; testComponent: "Scene3D.qml" }
 
+        ListElement { module: "QtCharts";                version: ""; status: 0; testComponent: "Charts.qml" }
+        ListElement { module: "QtDataVisualization";     version: ""; status: 0; testComponent: "DataVisualization.qml" }
+        ListElement { module: "QtGraphicalEffects";      version: ""; status: 0; testComponent: "GraphicalEffects.qml" }
+        ListElement { module: "QtGamepad";               version: ""; status: 0; testComponent: "Gamepad.qml" }
+        ListElement { module: "QtPurchasing";            version: ""; status: 0; testComponent: "Purchasing.qml" }
+        ListElement { module: "QtRemoteObjects";         version: ""; status: 0; testComponent: "RemoteObjects.qml" }
         ListElement { module: "QtCanvas3D";              version: ""; status: 0; testComponent: "Canvas3D.qml" }
         ListElement { module: "QtLocation";              version: ""; status: 0; testComponent: "Location.qml" }
+        //QtWinExtras
         ListElement { module: "Qt.labs.folderlistmodel"; version: ""; status: 0; testComponent: "FolderListModel.qml" }
-        ListElement { module: "Qt.labs.settings";        version: ""; status: 0; testComponent: "Settings.qml" }
+        ListElement { module: "Qt.labs.location";        version: ""; status: 0; testComponent: "LabLocation.qml" }
+        ListElement { module: "Qt.labs.qmlmodels";       version: ""; status: 0; testComponent: "LabQmlModels.qml" }
+        ListElement { module: "Qt.labs.settings";        version: ""; status: 0; testComponent: "LabSettings.qml" }
+        ListElement { module: "Qt.labs.wavefrontmesh";   version: ""; status: 0; testComponent: "LabWavefrontmesh.qml" }
     }
 
     CToolBar {

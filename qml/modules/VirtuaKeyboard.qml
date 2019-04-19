@@ -17,8 +17,8 @@
 ****************************************************************************/
 
 import QtQml 2.12
-import QtQml.StateMachine 1.0
+import QtQuick.VirtualKeyboard 2.4
 
 QtObject {
-    property string version: "1.0"
+    property string version: "2.4"
 }
