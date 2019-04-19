@@ -97,7 +97,7 @@
         <file>qml/examples/Joystick/Joystick</file>
         <file>qml/examples/Joystick/main</file>
         <file>qml/examples/Joystick/Player</file>
-        <file>qml/examples/Local Storage/Database.js</file>
+        <file>qml/examples/Local Storage/Database</file>
         <file>qml/examples/Local Storage/main</file>
         <file>qml/examples/Looped List View/DateSelector</file>
         <file>qml/examples/Looped List View/LoopedListView</file>
