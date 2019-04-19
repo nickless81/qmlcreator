@@ -1,6 +1,6 @@
 /****************************************************************************
 **
-** Copyright (C) 2013-2015 Oleg Yadrov
+** Copyright (C) 2019 Jose Pablo Castro Valverde
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@
 ****************************************************************************/
 
 import QtQml 2.12
-import Qt3D.Render 2.12
+import QtQml.StateMachine 1.0
 
 QtObject {
-    property string version: "2.12"
+    property string version: "1.0"
 }
